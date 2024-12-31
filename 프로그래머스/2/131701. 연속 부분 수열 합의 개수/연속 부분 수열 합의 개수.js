@@ -3,12 +3,10 @@ function solution(elements) {
     let n = elements.length;
     let ele = elements.concat(elements);
     
-    for(let i=1; i<=n; i++){
-        for(let j=0; j<n; j++){
-            let sum = 0;
-            for(let k=j; k<i+j; k++){
-                sum+= ele[k];
-            }
+    for(let i=0; i<n; i++){
+        let sum =0;
+        for(let j=0;  j<n; j++){
+            sum+= ele[i+j];
             arr.add(sum);
         }
     }
